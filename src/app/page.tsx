@@ -9,7 +9,7 @@ const Page: FC = () => {
   const [count, setCount] = useState<number>(0);
   const [contract, setContract] = useState<string | null>(null);
   const [address, setAddress] = useState<string | null>(null);
-  const [balance, setBalance] = useState<string | null>(0);
+  const [balance, setBalance] = useState<string | number>(0);
 
   useEffect(() => {
     async function initialize() {
